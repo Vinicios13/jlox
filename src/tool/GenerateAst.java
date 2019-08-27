@@ -12,6 +12,9 @@ public class GenerateAst {
             System.exit(1);
         }
         String outputDir = args[0];
+
+        defineAst(outputDir, "Expr", Arrays.asList("Binary   : Expr left, Token operator, Expr right",
+                "Grouping : Expr expression", "Literal  : Object value", "Unary    : Token operator, Expr right"));
     }
 
     private static void defineAst(String outputDir, String baseName, List<String> types) throws IOException {
@@ -54,6 +57,11 @@ public class GenerateAst {
 
         writer.println("    }");
 
+        writer.println();
+        writer.println("    <R> R accept(Visitor<R> visitor) {");
+        writer.println("      return visitor.visit" + className + baseName + "(this);");
+        writer.println("    }");
+
         // Fields.
         writer.println();
         for (String field : fields) {
@@ -61,11 +69,6 @@ public class GenerateAst {
         }
 
         writer.println("  }");
-
-        writer.println();
-        writer.println("    <R> R accept(Visitor<R> visitor) {");
-        writer.println("      return visitor.visit" + className + baseName + "(this);");
-        writer.println("    }");
     }
 
     private static void defineVisitor(PrintWriter writer, String baseName, List<String> types) {

@@ -1,6 +1,11 @@
 #!/bin/bash
+generateAst() {
+    javac -d bin -cp src src/tool/*.java
+    java -cp bin tool.GenerateAst "./src/lox"
+}
 
 build() {
+    generateAst
     javac -d bin -cp src src/lox/*.java
 }
 run() {
