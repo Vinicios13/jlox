@@ -9,3 +9,14 @@ This repo is an attempt to create the same java compiler for the Lox language as
 # build and run
 ./make.sh run
 ```
+# Todo
+- [x] Scanning
+- [x] Representing Code
+- [x] Parsing Expressions
+- [ ] Evaluating Expressions
+- [ ] Statements and State
+- [ ] Control Flow
+- [ ] Functions
+- [ ] Resolving and Binding
+- [ ] Classes
+- [ ] Inheritance
