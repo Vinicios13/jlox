@@ -9,7 +9,7 @@ build() {
     javac -d bin -cp src src/lox/*.java
 }
 run() {
-    java -cp bin lox.Lox
+    java -cp bin lox.Lox $1
 }
 
 case $1 in
@@ -19,8 +19,9 @@ case $1 in
 
 "run")
     build
-    run
+    run $2
 ;;
 *) echo "Invalid command" ;;
 esac
+
 
