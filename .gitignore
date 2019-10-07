@@ -38,3 +38,4 @@ bin/
 .vscode
 
 src/lox/Expr.java
+src/lox/Stmt.java

@@ -13,7 +13,7 @@ This repo is an attempt to create the same java compiler for the Lox language as
 - [x] Scanning
 - [x] Representing Code
 - [x] Parsing Expressions
-- [ ] Evaluating Expressions
+- [x] Evaluating Expressions
 - [ ] Statements and State
 - [ ] Control Flow
 - [ ] Functions
