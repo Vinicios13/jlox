@@ -14,8 +14,8 @@ This repo is an attempt to create the same java compiler for the Lox language as
 - [x] Representing Code
 - [x] Parsing Expressions
 - [x] Evaluating Expressions
-- [ ] Statements and State
-- [ ] Control Flow
+- [x] Statements and State
+- [x] Control Flow
 - [ ] Functions
 - [ ] Resolving and Binding
 - [ ] Classes
