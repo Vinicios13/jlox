@@ -23,5 +23,3 @@ case $1 in
 ;;
 *) echo "Invalid command" ;;
 esac
-
-
