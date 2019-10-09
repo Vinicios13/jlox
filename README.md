@@ -19,4 +19,4 @@ This repo is an attempt to create the same java compiler for the Lox language as
 - [x] Functions
 - [x] Resolving and Binding
 - [x] Classes
-- [ ] Inheritance
+- [x] Inheritance
