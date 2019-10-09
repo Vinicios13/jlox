@@ -17,6 +17,6 @@ This repo is an attempt to create the same java compiler for the Lox language as
 - [x] Statements and State
 - [x] Control Flow
 - [x] Functions
-- [ ] Resolving and Binding
-- [ ] Classes
+- [x] Resolving and Binding
+- [x] Classes
 - [ ] Inheritance
